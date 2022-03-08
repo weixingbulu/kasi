@@ -5,6 +5,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import http from './network/http'
+let {infofun,infotwo} = http
+Vue.prototype.$infofun = infofun
+Vue.prototype.$infotwo = infotwo
+
 new Vue({
   router,
   store,
